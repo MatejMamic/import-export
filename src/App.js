@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import auti from "./utilities/auto";
+import * as model from "./utilities/function";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>moj prvi auto: {model.getAuto(auti.auto1, model.bmw)}</p>
+      <p>moj drugi auto: {model.getAuto(auti.auto2, model.mercedes)}</p>
     </div>
   );
 }
